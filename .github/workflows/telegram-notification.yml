@@ -18,6 +18,7 @@ jobs:
           to: ${{ secrets.TG_DEPLOY_CHAT_ID }}
           token: ${{ secrets.TG_DEPLOY_TOKEN }}
           format: markdown
+          debug: true
           message: |
             *GitHub Actions Workflow Notification*
             
