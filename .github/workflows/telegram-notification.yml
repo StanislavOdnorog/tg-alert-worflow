@@ -12,6 +12,11 @@ jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
+      - name: Debug secrets
+        run: |
+          echo "Secret exists check (should be true): ${{ secrets.TG_DEPLOY_CHAT_ID != '' }}"
+          echo "Token exists check (should be true): ${{ secrets.TG_DEPLOY_TOKEN != '' }}"
+      
       - name: Send Telegram notification
         uses: appleboy/telegram-action@master
         with:
