@@ -1,0 +1,13 @@
+{
+  "name": "tg-alert-workflow-test",
+  "version": "1.0.0",
+  "description": "Test project for GitHub Actions Telegram notification",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Success: no test specified\" && exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+} 
