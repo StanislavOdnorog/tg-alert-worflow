@@ -2,8 +2,6 @@ name: Telegram Notification
 
 on:
   workflow_run:
-    workflows:
-      - "*"
     types:
       - completed
 
