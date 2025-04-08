@@ -3,12 +3,13 @@ name: Telegram Notification
 on:
   workflow_run:
     workflows:
-      - "!Telegram Notification"
+      - "*"
     types:
       - completed
 
 jobs:
   notify:
+    if: ${{ github.event.workflow_run.name != 'Telegram Notification' }}
     runs-on: ubuntu-latest
     steps:
       - name: Debug secrets
