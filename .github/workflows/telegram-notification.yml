@@ -3,8 +3,7 @@ name: Telegram Notification
 on:
   workflow_run:
     workflows:
-      - "Deploy Explorer - PROD"
-      - "Deploy Explorer - PROD - From Branch"
+      - "!Telegram Notification"
     types:
       - completed
 
